@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom'
 const Header = () => {
   return (
     <>
-      <Link to='/reducer'>See useReducer Hook</Link>
-      <Link to='/context'>See useContext Hook</Link>
+      <header className='text-center pt-10 pb-20'>
+        <Link className='px-10 py-5 text-2xl text-white hover:text-yellow-500 duration-300' to='/reducer'>useReducer Hook</Link>
+        <Link className='px-10 py-5 text-2xl text-yellow-500 hover:text-white duration-300' to='/context'>useContext Hook</Link>
+      </header>
     </>
   )
 }

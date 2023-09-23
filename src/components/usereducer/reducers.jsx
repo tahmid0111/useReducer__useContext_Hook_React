@@ -26,12 +26,24 @@ const dummyDatas = [
 
 const Reducers = () => {
     const [datas, setDatas] = useState(dummyDatas)
+    const [newData, setNewData] = useState('')
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        setDatas((prevData) => {
+            let brandNewData = {id: new Date().getTime().toString(), name: newData}
+            return [...prevData, brandNewData]
+        })
+        console.log(datas)
+        setNewData('')
+    }
   return (
     <>
     <div>
-        <form>
-            <input type="text" placeholder='new data' />
-            <button type="submit">add</button>
+        <form onSubmit={handleSubmit}>
+            <input type="text" placeholder='new data' value={newData} onChange={e => setNewData(e.target.value)} />
+            <button type="submit">Add</button>
         </form>
     </div>
       <div>
