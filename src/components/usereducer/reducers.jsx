@@ -4,23 +4,28 @@ import SingleReducer from './singleReducer'
 const dummyDatas = [
     {
         id: 1,
-        name: 'a'
+        name: 'a',
+        color: 'bg-red-500',
     },
     {
         id: 2,
-        name: 'b'
+        name: 'b',
+        color: 'bg-yellow-700',
     },
     {
         id: 3,
-        name: 'c'
+        name: 'c',
+        color: 'bg-green-900',
     },
     {
         id: 4,
-        name: 'd'
+        name: 'd',
+        color: 'bg-rose-950',
     },
     {
         id: 5,
-        name: 'e'
+        name: 'e',
+        color: 'bg-rose-600',
     },
 ]
 
