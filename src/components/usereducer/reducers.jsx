@@ -40,10 +40,10 @@ const Reducers = () => {
     }
   return (
     <>
-    <div>
+    <div className='text-center'>
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder='new data' value={newData} onChange={e => setNewData(e.target.value)} />
-            <button type="submit">Add</button>
+            <input className="input input-bordered input-primary w-full max-w-xs" type="text" placeholder='new data' value={newData} onChange={e => setNewData(e.target.value)} />
+            <button className='btn btn-primary ml-10' type="submit">Add</button>
         </form>
     </div>
       <div>
