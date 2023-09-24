@@ -19,7 +19,7 @@ const SingleReducer = (props) => {
     <>
       <div className={`${generateRandomColor()} card w-96 text-primary-content mb-12`}>
         <div className="card-body">
-          <h2 className="card-title">Card title!</h2>
+          <h2 className="card-title">{name}</h2>
           <p>If a dog chews shoes whose shoes does he choose?</p>
           <div className="card-actions justify-end">
             <button className="btn">Buy Now</button>
