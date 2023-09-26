@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import MyReducer from './components/usecontext/myReducer.jsx';
 import MyContext from './components/usereducer/myContext.jsx';
+import Counter from './components/usereducer/counter.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,10 @@ const router = createBrowserRouter([
   {
     path: "/context",
     element: <MyContext />,
+  },
+  {
+    path: "/counter",
+    element: <Counter />,
   },
 ]);
 

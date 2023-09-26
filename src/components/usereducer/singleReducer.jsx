@@ -17,7 +17,7 @@ const SingleReducer = (props) => {
 
   return (
     <>
-      <div className={`${color} card w-96 text-primary-content mb-12`}>
+      <div className={`bg-yellow-500 card w-96 text-primary-content mb-12`}>
         <div className="card-body">
           <h2 className="card-title">{name}</h2>
           <div className="card-actions justify-end">
